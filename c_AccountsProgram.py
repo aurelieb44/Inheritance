@@ -11,9 +11,9 @@ def main():
     int_rate = float(input('Interest rate: '))
     balance = float(input('Balance: '))
 
-    # Create a SavingsAccount object.
+    # Create a SavingsAccount object. # isntance of the super class
     savings = accounts.SavingsAccount(acct_num, int_rate, \
-                                      balance)
+                                      balance) 
 
     # Get the account number, interest rate,
     # account balance, and maturity date for a CD.
@@ -23,7 +23,7 @@ def main():
     balance = float(input('Balance: '))
     maturity = input('Maturity date: ')
 
-    # Create a CD object.
+    # Create a CD object. # instance of the subclass
     cd = accounts.CD(acct_num, int_rate, balance, maturity)
 
     # Display the data entered.

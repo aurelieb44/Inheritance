@@ -45,12 +45,13 @@ class CD(SavingsAccount):
     # account number, interest rate, balance, and
     # maturity date.
     
-    def __init__(self, account_num, int_rate, bal, mat_date):
+    def __init__(self, account_num, int_rate, bal, mat_date): 
+        # we need those arguments to create the superclass, therefore we also need them to create the subclass.
         # Call the superclass __init__ method.
         SavingsAccount.__init__(self, account_num, int_rate, bal)
 
         # Initialize the __maturity_date attribute.
-        self.__maturity_date = mat_date
+        self.__maturity_date = mat_date # only applies to the subclass.
 
     # The set_maturity_date is a mutator for the
     # __maturity_date attribute.
