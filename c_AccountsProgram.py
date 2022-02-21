@@ -1,7 +1,7 @@
 # This program creates an instance of the SavingsAccount
 # class and an instance of the CD account.
 
-import AccountsClass as accounts
+import c_AccountsClass as accounts
 
 def main():
     # Get the account number, interest rate,
@@ -11,7 +11,7 @@ def main():
     int_rate = float(input('Interest rate: '))
     balance = float(input('Balance: '))
 
-    # Create a SavingsAccount object. # isntance of the super class
+    # Create a SavingsAccount object. # instance of the super class
     savings = accounts.SavingsAccount(acct_num, int_rate, \
                                       balance) 
 
@@ -26,7 +26,7 @@ def main():
     # Create a CD object. # instance of the subclass
     cd = accounts.CD(acct_num, int_rate, balance, maturity)
 
-    # Display the data entered.
+    # Display the data entered. # from the get class
     print('Here is the data you entered:')
     print()
     print('Savings Account')

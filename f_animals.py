@@ -33,7 +33,7 @@ class Dog(Mammal):
     # The make_sound method overrides the superclass's
     # make_sound method.
     
-    def make_sound(self):
+    def make_sound(self): # the same method name in the subclass and in the superclass
         print('Woof! Woof!')
 
 # The Cat class is a subclass of the Mammal class.

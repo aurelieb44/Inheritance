@@ -6,7 +6,7 @@ def main():
     # Create a Mammal object, a Dog object, and
     # a Cat object.
     mammal = animals.Mammal('regular animal')
-    dog = animals.Dog()
+    dog = animals.Dog() # we already hardcoded the word dog in the class so no argument
     cat = animals.Cat()
 
 
@@ -15,12 +15,12 @@ def main():
     print('the sounds they make.')
     print('--------------------------')
     mammal.show_species()
-    mammal.make_sound()
+    mammal.make_sound() # generic sound
 
     print()
 
     dog.show_species()
-    dog.make_sound()
+    dog.make_sound() # switches to woof # know to use the method from subclass
 
     print()
 
